@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my page</title>
-    <!-- Adicionando a biblioteca AOS CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <style>
         * {
             margin: 0;
@@ -22,6 +20,7 @@
             line-height: 1.5;
         }
         
+
         .header {
             display: flex;
             align-items: center;
@@ -50,7 +49,7 @@
             font-weight: 900;
         }
         
-        /* Animação da mão acenando */
+
 .wave {
     font-size: 30px;
     margin: 0 10px;
@@ -138,12 +137,19 @@
         }
         
         .skill-tag {
-            background-color: #333;
+            background-color: #333; 
             color: white;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 14px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
+
+        
+.skill-tag:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
         
         a {
             color: inherit;
@@ -156,7 +162,6 @@
             align-items: center;
         }
       
-        /* Estilos para a seção de projetos */
         .projects-intro {
             text-align: center;
             margin-bottom: 30px;
@@ -274,7 +279,7 @@
             margin-bottom: 10px;
         }
         
-        /* Estilos para os links sociais */
+
         .social-links {
             display: flex;
             gap: 10px;
@@ -310,9 +315,7 @@
             height: 18px;
             width: 18px;
         }
-        
-        /* Estilos para o footer */
-        footer {
+                footer {
             margin-top: 60px;
             border-top: 1px solid #eee;
             padding-top: 30px;
@@ -326,7 +329,7 @@
             gap: 15px;
             margin-top: 15px;
         }
-        /* Estilização da scrollbar - linha preta simples */
+  
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -345,12 +348,12 @@
     background: #333;
 }
 
-/* Para Firefox */
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #000 transparent;
 }
-        /* Media queries para responsividade */
+     
         @media (max-width: 768px) {
             .projects-heading {
                 font-size: 36px;
@@ -417,6 +420,7 @@
                 font-size: 12px;
             }
         }
+        
     </style>
 </head>
 <body>
@@ -448,7 +452,7 @@
     <section id="about" data-aos="fade-up" data-aos-duration="800">
         <h2 data-aos="fade-right" data-aos-delay="100">Sobre</h2>
         <p data-aos="fade-up" data-aos-delay="300">Olá me chamo Eduardo</b> sou um entusiasta da Tecnologia da Informação e, ao longo da minha jornada, passei por diversas tecnologias, como Java, Git, MySQL, MongoDB, Python, CSS, HTML, entre outras.
-            Posso afirmar que essa evolução foi incrível, pois pude aplicar meu aprendizado em diversos projetos práticos. Agora, estou explorando novas possibilidades, como o Node.js.</p>
+            Posso afirmar que essa evolução foi incrível, pois pude aplicar meu aprendizado em diversos projetos práticos. Agora, estou explorando novas possibilidades, como o Flask.</p>
     </section>
     
     <!-- seção de projetos -->
@@ -476,6 +480,7 @@
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
                         <span class="tech-tag">EJS</span>
+                        
                         
                        
                     </div>
@@ -606,11 +611,10 @@
     <section id="skills" data-aos="fade-up" data-aos-duration="800">
         <h2 data-aos="fade-right" data-aos-delay="100">Skills</h2>
         <div class="skills" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="100">React</div>
             <div class="skill-tag" data-aos="zoom-in" data-aos-delay="200">Express.js</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="300">Typescript</div>
             <div class="skill-tag" data-aos="zoom-in" data-aos-delay="400">Node.js</div>
             <div class="skill-tag" data-aos="zoom-in" data-aos-delay="500">Python</div>
+            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="500">Flask</div>
             <div class="skill-tag" data-aos="zoom-in" data-aos-delay="600">Java</div>
             <div class="skill-tag" data-aos="zoom-in" data-aos-delay="700">Javascript</div>
             <div class="skill-tag" data-aos="zoom-in" data-aos-delay="800">MySQL</div>
@@ -638,18 +642,6 @@
             </a>
         </div>
     </footer>
-
-    <!-- Adicionar scripts do AOS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        // Inicializar AOS
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
-        });
-    </script>
 </body>
 </html>
 
